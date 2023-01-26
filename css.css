@@ -1,0 +1,169 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'DM Serif Display';
+    src: url('DMSerifDisplay-Regular.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #006450;
+    background-image: linear-gradient(to bottom,#106333,#006450);
+    margin: 0px;
+    font-family: 'DM Serif Display';
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #cefaf7;
+    height: 80px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 70px;
+    align-items: center;
+    display: flex;
+    font-family: 'DM Serif Display';
+    justify-content: center;
+    color: #e5af00;
+}
+
+nav {
+    text-align: right;
+    position: absolute;
+    right: 5%;
+    word-spacing: 10px;
+}
+
+img.icone {
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+hr {
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-color: #e5af00;
+    box-shadow: 0px 0px 2px black;
+}
+
+h2 {
+    color: #e5af00;
+}
+
+footer{
+    background-color: #000e0b;
+    height: 200px;
+    color: white;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+div.expansive > p {
+    color: #006450;
+}
+
+div.expansive {
+    width: 35%;
+    background-color: #cefaf7;
+    box-shadow: 0px 0px 10px black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.5s ease;
+}
+
+div.expansive:hover{
+    transform: scale(1.1,1.1);
+}
+
+div.parallax {
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0px 0px 5px black;
+    background-image: url("imagens/folhas-blur.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: white;
+    height: 300px;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+div#inicial {
+    padding: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 10px black;
+}
+
+div#inicial > h1 {
+    color: #e5af00;
+    text-shadow: 0px 0px 10px black;
+    letter-spacing: 5px;
+    word-spacing: 20px;
+}
+
+#div1{
+    margin-left: 5%;
+}
+
+#div2 {
+    align-self: flex-end;
+    margin-right: 5%;
+    text-align: right;
+}
+
+div#vertical1 {
+    background-color: #e5af00;
+    height: 150px;
+    width: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #e5af00;
+    margin: 20px;
+    display: inline;
+    float: left;
+
+}
+
+div#vertical2 {
+    background-color: #e5af00;
+    height: 150px;
+    width: 5px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px #e5af00;
+    margin: 20px;
+    display: inline;
+    float: right;
+}
+
+p#info1 {
+    color: #cefaf7;
+}
+
+p#info2 {
+    color: #cefaf7;
+    justify-content: center;
+}
+
+div#caixa1 {
+    margin-left: 10%;
+    width: 40%;
+    padding: 10px;
+}
+
+div#caixa2 {
+    width: 40%;
+    padding: 10px;
+    align-self: flex-end;
+    margin-right: 5%;
+    text-align: right;
+}
+
