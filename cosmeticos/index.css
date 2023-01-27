@@ -1,0 +1,86 @@
+﻿
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    /*background-image: linear-gradient(to right,blue,red);*/
+    background-color: #ffc3af;
+    color: white;
+    font-family: 'Trebuchet MS';
+}
+
+header {
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0px 0px 10px #515151;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+nav{
+    display: flex;
+    gap: 30px;
+}
+
+img{
+    height: 350px;
+    border-radius: 10px;
+}
+
+section{
+    display: flex;
+    width: 40%;
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+h1 {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-size: 40px;
+    transition: transform 1s ease;
+}
+
+h1:hover{
+    transform: scale(1.2,1.2);
+}
+
+#titulo{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    margin-bottom: 50px;
+}
+
+.produtos{
+    width: 230px;
+}
+
+.produtos > p{
+    font-weight: 900;
+    text-align: justify;
+}
+
+#produtos{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer{
+    background-color: #c36444;
+    box-shadow: 0px 0px 10px #515151;
+    height: 100px;  
+}
+
+
