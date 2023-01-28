@@ -1,4 +1,6 @@
-﻿
+﻿@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Kaushan+Script&display=swap');
+
 *{
     margin: 0px;
     padding: 0px;
@@ -11,10 +13,9 @@ html {
 }
 
 body {
-    /*background-image: linear-gradient(to right,blue,red);*/
-    background-color: #ffc3af;
+    background-color: #e69579;
     color: white;
-    font-family: 'Trebuchet MS';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header {
@@ -32,9 +33,10 @@ nav{
     gap: 30px;
 }
 
-img{
+img {
     height: 350px;
     border-radius: 10px;
+    box-shadow: 0px 0px 5px #515151;
 }
 
 section{
@@ -48,11 +50,12 @@ h1 {
     border-top: 1px solid white;
     border-bottom: 1px solid white;
     font-size: 40px;
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
+    font-family: 'Courgette', cursive;
 }
 
 h1:hover{
-    transform: scale(1.2,1.2);
+    transform: scale(1.1,1.1);
 }
 
 #titulo{
@@ -80,7 +83,39 @@ h1:hover{
 footer{
     background-color: #c36444;
     box-shadow: 0px 0px 10px #515151;
-    height: 100px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    row-gap: 20px;
 }
 
+footer > p{
+    display: flex;
+    text-align: center;
+}
+
+.icone {
+    border-radius: 10px;
+    height: 30px;
+    width: 30px;
+}
+
+#lotus{
+    height: 20px;
+    box-shadow: none;
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+}
+
+#logo > p {
+    font-size: 20px;
+    font-family: 'Courgette', cursive;
+    align-items: center;
+    justify-content: center;
+}
 
