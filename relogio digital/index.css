@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Share+Tech+Mono&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-image: linear-gradient(to right,#aaccff,white,#aaccff);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Share Tech Mono', monospace;
+    color: #4e74ad;
+}
+
+#relogio{
+    padding: 50px;
+    border-radius: 100px;
+    box-shadow: inset 0px 0px 25px #4e74ad;
+    border: 10px solid transparent;
+    display: flex;
+    gap: 50px;
+}
+
+#horas,#minutos,#segundos{
+    font-size: 70px;
+}
+
+.tempo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#borda{
+    border-radius: 105px;
+    box-shadow: 0px 0px 50px #4e74ad;
+    padding: 5px;
+}
+
