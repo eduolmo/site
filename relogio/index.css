@@ -3,16 +3,31 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-decoration: none;
 }
 
 body{
     background-image: linear-gradient(to right,#aaccff,white,#aaccff);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
     font-family: 'Share Tech Mono', monospace;
     color: #4e74ad;
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section{
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #relogio{
@@ -38,4 +53,3 @@ body{
     border-radius: 100px;
     box-shadow: 0px 0px 50px #4e74ad;
 }
-
