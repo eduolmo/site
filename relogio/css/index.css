@@ -46,11 +46,7 @@ section{
 #horas,#minutos,#segundos,#milesimos{
     font-size: 70px;
 }
-/*
-#milesimos{
-    font-size: 40px;
-}
-*/
+
 .tempo{
     display: flex;
     flex-direction: column;

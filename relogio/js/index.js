@@ -20,6 +20,9 @@ setInterval(() => {
     if(segundo < 10){
         segundo = '0' + segundo
     }
+    if(milesimo < 10){
+        milesimo = '0' + milesimo
+    }
 
     horas.innerHTML = hora
     minutos.innerHTML = minuto

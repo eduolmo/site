@@ -1,6 +1,7 @@
 let horas = document.querySelector('#horas')
 let minutos = document.querySelector('#minutos')
 let segundos = document.querySelector('#segundos')
+let milesimos = document.querySelector('#milesimos')
 
 let iniciar = document.querySelector('#iniciar')
 let pausar = document.querySelector('#pausar')
@@ -11,9 +12,11 @@ let iniciou = false
 iniciar.addEventListener('click', () => {
     if(!iniciou){
         iniciou = !iniciou
+        let mil = parseInt(milesimos.innerHTML)
         let s = parseInt(segundos.innerHTML)
         let m = parseInt(minutos.innerHTML)
         let h = parseInt(horas.innerHTML)
+
         if(m < 10){
             m = '0' + m
         }
@@ -22,8 +25,13 @@ iniciar.addEventListener('click', () => {
         }
 
         intervalo = setInterval(() => {
-            s++
-            
+            mil += 10
+
+            if(mil >= 1000){
+                s++
+                mil = 0
+            }
+
             if(s == 60){
                 s = 0
                 m++
@@ -46,11 +54,15 @@ iniciar.addEventListener('click', () => {
             if(s < 10){
                 s = '0' + s
             }
+            if(mil < 10){
+                mil = '0' + mil
+            }
+            milesimos.innerHTML = mil
             segundos.innerHTML = s
             minutos.innerHTML = m
             horas.innerHTML = h
 
-        },1000)
+        },10)
     }
 })
 
