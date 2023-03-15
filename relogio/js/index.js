@@ -9,6 +9,7 @@ setInterval(() => {
     let minuto = data.getMinutes()
     let segundo = data.getSeconds()
     let milesimo = data.getMilliseconds()
+    
     if(hora < 10){
         hora = '0' + hora
     }
