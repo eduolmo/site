@@ -1,13 +1,14 @@
 let horas = document.querySelector('#horas')
 let minutos = document.querySelector('#minutos')
 let segundos = document.querySelector('#segundos')
+let milesimos = document.querySelector('#milesimos')
 
 setInterval(() => {
     let data = new Date()
     let hora = data.getHours()
     let minuto = data.getMinutes()
     let segundo = data.getSeconds()
-
+    let milesimo = data.getMilliseconds()
     if(hora < 10){
         hora = '0' + hora
     }
@@ -21,6 +22,7 @@ setInterval(() => {
     horas.innerHTML = hora
     minutos.innerHTML = minuto
     segundos.innerHTML = segundo
+    milesimos.innerHTML = milesimo
 
 })
 

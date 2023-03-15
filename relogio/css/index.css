@@ -43,10 +43,14 @@ section{
     gap: 50px;
 }
 
-#horas,#minutos,#segundos{
+#horas,#minutos,#segundos,#milesimos{
     font-size: 70px;
 }
-
+/*
+#milesimos{
+    font-size: 40px;
+}
+*/
 .tempo{
     display: flex;
     flex-direction: column;
