@@ -17,6 +17,9 @@ iniciar.addEventListener('click', () => {
         let m = parseInt(minutos.innerHTML)
         let h = parseInt(horas.innerHTML)
 
+        if(s < 10){
+            s = '0' + s
+        }
         if(m < 10){
             m = '0' + m
         }
@@ -25,16 +28,23 @@ iniciar.addEventListener('click', () => {
         }
 
         intervalo = setInterval(() => {
-            mil += 10
+            mil = parseInt(milesimos.innerHTML)
+            mil += 5
 
-            if(mil >= 1000){
+            if(mil >= 100){
                 s++
-                mil = 0
+                mil = '00'
+                if(s < 10){
+                    s = '0' + s
+                }
             }
 
             if(s == 60){
                 s = 0
                 m++
+                if(s < 10){
+                    s = '0' + s
+                }
                 if(m < 10){
                     m = '0' + m
                 }
@@ -51,18 +61,12 @@ iniciar.addEventListener('click', () => {
                 }
             }
             
-            if(s < 10){
-                s = '0' + s
-            }
-            if(mil < 10){
-                mil = '0' + mil
-            }
             milesimos.innerHTML = mil
             segundos.innerHTML = s
             minutos.innerHTML = m
             horas.innerHTML = h
 
-        },10)
+        },50)
     }
 })
 
