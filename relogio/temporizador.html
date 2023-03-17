@@ -4,15 +4,15 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="css/index.css">
-        <script src="js/index.js" defer></script>
-        <title>Relógio Digital</title>
+        <link rel="stylesheet" href="css/temporizador.css">
+        <script src="js/temporizador.js" defer></script>
+        <title>Temporizador</title>
     </head>
     <body>
         <header>
             <a href="cronometro.html">Cronômetro</a>
-            <a href="index.html"><strong>Relógio</strong></a>
-            <a href="temporizador.html">Temporizador</a>
+            <a href="index.html">Relógio</a>
+            <a href="temporizador.html"><strong>Temporizador</strong></a>
         </header>
         
         <section>
@@ -20,24 +20,29 @@
                 <div id="relogio">
     
                     <span class="tempo">
-                        <span id="horas">00</span>
+                        <input type="number" id="horas" min="0" max="99" placeholder="00">
                         <span class="legenda">Horas</span>
                     </span>
                     <span class="tempo">
-                        <span id="minutos">00</span>
+                        <input type="number" id="minutos" min="0" max="99" placeholder="00">
                         <span class="legenda">Minutos</span>
                     </span>
                     <span class="tempo">
-                        <span id="segundos">00</span>
+                        <input type="number" id="segundos" min="0" max="99" placeholder="00">
                         <span class="legenda">Segundos</span>
                     </span>
                     <span class="tempo">
-                        <span id="milesimos">00</span>
+                        <input type="number" id="milesimos" min="0" max="99" placeholder="00">
                         <span class="legenda">Milesimos</span>
                     </span>
     
                 </div>
-            </div>    
+            </div>
+
+            <div id="botoes">
+                <button id="iniciar">Iniciar</button>
+                <button id="pausar">Pausar</button>
+            </div>
         </section>
         
     </body>
