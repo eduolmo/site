@@ -83,7 +83,9 @@ input{
     color: #4e74ad;
     border-radius: 10px;
     -webkit-appearance: none;
-    outline-color: #4e74ad; 
+    outline-color: #4e74ad;
+    font-family: 'Share Tech Mono', monospace;
+    text-align: center;
 }
 
 input::-webkit-inner-spin-button { 
